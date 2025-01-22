@@ -1,0 +1,106 @@
+// Color Palette
+$primary-color: #1235b6;
+$secondary-color: #004d40;
+$accent-color: #ff7043;
+$background-color: #f4f4f4;
+$card-background: #ffffff;
+$text-color: #333;
+$border-color: #e0e0e0;
+$hover-bg-color: #e8f5e9;
+$shadow-color: rgba(0, 0, 0, 0.1);
+
+// Products Container
+.Wishlist {
+  padding-top: 20px; // Increase top padding to allow space for the bigger heading
+  
+  // Add background for the heading
+  .wishlist-heading {
+    width: 100%;
+    text-align: center;
+    font-size: 4rem;  // Increase font size to make the heading bigger
+    color: $primary-color;
+    font-weight: bold;
+    font-style: italic;
+    opacity: 0.8; // Optional: you can adjust the transparency to make it more visible
+  }
+}
+.products-container
+{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin:20px
+}
+.no-products {
+  text-align: center;
+  font-size: 18px;
+  color: $text-color;
+  opacity: 0.6;
+  margin-top: 30px;
+}
+
+
+
+.men-card{
+  box-shadow: rgba(66, 65, 65, 0.35) 0px 5px 15px;
+  padding: 20px 20px;
+  width: 250px;
+  height: 250px;
+  transition: all 0.1s ease-in-out;
+  position: relative;
+}
+
+.image img{
+  width:14em ;
+  height: 10em;
+  border-radius: 8px;
+  object-fit: cover;
+  margin-left: 2px;
+  background-size: cover;
+  
+}
+
+.men-card:hover{
+  transform: scale(0.9);
+  border-radius: 10px;
+  transition: all 0.3s ease-in-out;
+  color: black;    
+}
+
+
+.asd{
+  text-decoration: none;
+  color: black;
+}
+.category{
+  color: grey;
+  font-size: 10px;
+  margin-bottom: 5px;
+}
+
+.content{
+  /* background-color: red; */
+  width: 80%;
+  text-align: center;
+  position: absolute;
+  top: 62%;
+  left: 9%;
+}
+
+
+.product-name{
+  color: black;
+  margin-bottom: 10px;
+  font-size: 24px;
+  font-weight: bold;
+  /* margin-right: 10px; */
+
+}
+.price{
+  font-size: 18px;
+  font-weight: bold;
+  color: rgb(134, 9, 9);
+
+
+}

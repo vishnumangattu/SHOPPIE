@@ -1,0 +1,333 @@
+// src/VerifyEmail.scss
+// $secondary-color: #a1c9cb;  // Light color for background
+// $primary-color: #094432;  // Dark color for elements
+// $accent-color: #044733;  // Accent color for buttons and highlights
+// $black: #0e0d0d;
+// $light-gray: #f1f1f1;
+// $dark-gray: #333;
+// $error-color: #319275;  // Red for error messages
+
+// // Global Body Styling
+// body {
+//   font-family: 'Roboto', sans-serif;
+//   margin: 0;
+//   padding: 0;
+//   color: $light-gray;
+// }
+
+// // Main Verify Email Container
+// .email-container {
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   height: 92vh;
+//   background-image: url('/images/bg.avif');
+//   background-position: center;
+//   background-repeat: no-repeat;
+//   background-size: cover;
+
+//   .email-box {
+//     background-color: rgba(161, 201, 203, 0.596); 
+//     padding: 2.5rem;
+//     border-radius: 12px;
+//     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+//     width: 100%;
+//     max-width: 400px;
+//     text-align: center;
+
+
+//     &:hover {
+//       transform: translateY(-10px);
+//     }
+
+//     .logo {
+//       margin-bottom: 1rem;
+//       img {
+//         width: 80px;
+//         height: 80px;
+//         border-radius: 50%;
+//       }
+//     }
+
+//     h2 {
+//       color: $black;
+//       font-size: 28px;
+//       margin-bottom: 0.5rem;
+//       letter-spacing: 1px;
+//       font-weight: 600;
+//       color: #fdfdfd;
+//     }
+
+//     .tagline {
+//       color: $black;
+//       font-size: 14px;
+//       margin-bottom: 2rem;
+//       opacity: 0.8;
+//       color: #fff;
+//     }
+
+//     .input-group {
+//       margin-bottom: 1.5rem;
+//       position: relative;
+
+//       label {
+//         display: block;
+//         font-size: 14px;
+//         margin-bottom: 5px;
+//         color: $black;
+//         opacity: 0.8;
+//       }
+
+//       input {
+//         width: 100%;
+//         padding: 0.75rem;
+//         border-radius: 8px;
+//         border: 1px solid $light-gray;
+//         background-color: #fff;
+//         font-size: 16px;
+//         color: #084144;
+//         outline: none;
+        
+
+//         &:focus {
+//           border-color: $accent-color;
+//           box-shadow: 0 0 8px rgba($accent-color, 0.4);
+//         }
+
+//         &.error {
+//           border-color: $error-color;
+//         }
+//       }
+//     }
+
+//     .error-message {
+//       color: $error-color;
+//       font-size: 14px;
+//       margin-bottom: 1rem;
+//       text-align: left;
+//     }
+
+//     .btn {
+//       width: 100%;
+//       padding: 0.75rem;
+//       background-color: $accent-color;
+//       color: #fff;
+//       font-size: 16px;
+//       border-radius: 8px;
+//       border: none;
+//       cursor: pointer;
+//       transition: all 0.3s ease;
+//       text-transform: uppercase;
+
+//       &:hover {
+//         background-color: lighten($accent-color, 10%);
+//       }
+
+//       &:active {
+//         background-color: lighten($accent-color, 15%);
+//         transform: scale(0.98);
+//       }
+//     }
+
+    .extra-links {
+      margin-top: 1rem;
+      margin-left: 13rem;
+      font-size: 14px;
+      color:black;
+
+      .resend-code {
+        margin-bottom: 0.5rem;
+      }
+
+      a {
+       
+        text-decoration: none;
+        font-weight: 600;
+        transition: color 0.3s ease;
+
+        &:hover {
+          // color: darken($accent-color, 15%);
+          text-decoration: underline;
+        }
+      }
+    }
+
+
+
+// Media Queries for Responsiveness
+// @media (max-width: 768px) {
+//   .email-container {
+//     padding: 1rem;
+//   }
+
+//   .email-box {
+//     padding: 1.5rem;
+//     width: 90%;
+//     max-width: 350px;
+//     h2 {
+//       font-size: 24px;
+//     }
+
+//     .tagline {
+//       font-size: 12px;
+//       margin-bottom: 1.5rem;
+//     }
+
+//     .input-group {
+//       label {
+//         font-size: 13px;
+//       }
+
+//       input {
+//         font-size: 14px;
+//       }
+//     }
+
+//     .btn {
+//       font-size: 14px;
+//       padding: 0.8rem;
+//     }
+//   }
+// }
+
+// @media (max-width: 480px) {
+//   .email-container {
+//     padding: 1rem;
+//   }
+
+//   .email-box {
+//     width: 100%;
+//     max-width: 300px;
+//     padding: 1rem;
+
+//     h2 {
+//       font-size: 22px;
+//     }
+
+//     .tagline {
+//       font-size: 12px;
+//       margin-bottom: 1rem;
+//     }
+
+//     .input-group {
+//       label {
+//         font-size: 12px;
+//       }
+
+//       input {
+//         font-size: 13px;
+//       }
+//     }
+
+//     .btn {
+//       font-size: 14px;
+//       padding: 0.8rem;
+//     }
+//   }
+// }
+
+.email{
+  body {
+      font-family: Arial, sans-serif;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background: linear-gradient(100deg, #ffffff, #fff53c,#fffffb);
+      margin: 0;
+      padding: 0;
+  }
+  
+  .container {
+      max-width: 500px;
+      margin: 50px auto;
+      padding: 20px;
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  
+      background: rgba(255, 255, 255, 0.2);
+      border-radius: 16px;
+      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+      backdrop-filter: blur(5px);
+      -webkit-backdrop-filter: blur(5px);
+      border: 1px solid rgba(255, 255, 255, 0.3);
+  }
+  
+  h1 {
+      text-align: center;
+      color: #010101; 
+  }
+  
+  .form-group {
+      margin-bottom: 15px;
+  }
+  
+  label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+      color: #000000; 
+  }
+  
+  input,
+  textarea {
+      width: 100%;
+      padding: 10px;
+      border-radius: 4px;
+      box-sizing: border-box;
+      font-size: 16px;
+  
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 15px;
+      background-color: #ffffff21;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      outline: none;
+  }
+  
+  textarea {
+      resize: vertical;
+  }
+  
+  button {
+      width: 100%;
+      padding: 10px;
+      background-color: #12a53e; 
+      color: white;
+      border: none;
+      border-radius: 4px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+  }
+  
+  button:hover {
+      background-color: #048e29; 
+  }
+  
+  
+  #pro img{
+      height: 100px;
+      width: 100px;
+      object-fit: cover;
+  }
+  
+  #user-img{
+      width: 150px;
+      height: 150px;
+      border-radius: 50px;
+  }
+  
+  #user-img img{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+  }
+  .profilediv
+  {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      margin-bottom: 20px;
+  }
+  }

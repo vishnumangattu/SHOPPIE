@@ -1,0 +1,190 @@
+.company-details {
+    display: flex;
+    justify-content: space-around;
+    height: 90vh;
+    padding: 20px;
+    background-color: #726b6b;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);.company-info {
+      flex: 0.2;
+      display: flex;
+      flex-direction: column;
+      // gap: 20px;
+      align-items: center;
+      padding: 10px;
+      padding-right: 40px;
+      background-color: rgb(15, 0, 77);
+      color:rgb(255, 255, 255);
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(235, 232, 232, 0.1);
+    
+      .company-photo {
+        text-align: center;
+        margin: 20px;
+      }
+    
+      .comp {
+        width: 90%;
+        margin: auto;
+        .company-name,
+        .company-location,
+        .company-contact,
+        .company-gstin{
+          margin-bottom: 15px;
+    
+          label {
+            font-weight: bold;
+            margin-bottom: 5px;
+            display: block;
+          }
+    
+          p {
+            font-size: 16px;
+            color: #555;
+          }
+          .editable-input {
+            width: 100%;
+            padding: 8px;
+            font-size: 16px;
+            border: 1px solid #000000;
+            border-radius: 5px;
+            margin-top: 5px;
+            color: black;
+            // background:transparent;
+           
+            // Focus state
+            &:focus {
+              border-color: #007bff; // Blue border on focus
+              outline: none;
+            }
+    
+            // Disabled state
+            &:disabled {
+              background-color: #f1f1f1;
+              border: none;
+              cursor: not-allowed;
+            }
+          }
+        }
+      }
+    
+      .edit-btn,
+      .save-btn {
+        display: flex;
+        justify-content: space-evenly;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        width: 60%;
+        height: 50px;
+        padding: 10px 10px;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 26px;
+      }
+    
+      .edit-btn {
+        margin-right: 10px;
+      }
+    
+      .edit-btn:hover,
+      .save-btn:hover {
+        background-color: #11539a;
+      }
+    }
+    
+      
+      .company-categories {
+        flex: 0.7;
+        padding: 20px;
+        background-color: white;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        .header{
+          margin-bottom: 15px;
+          display: flex;
+          align-items: center;
+          gap: 15px;
+          h3 {
+            font-size: 20px;
+            color: #333;
+          }  
+          /* From Uiverse.io by cssbuttons-io */
+          .add-product-link {
+            text-decoration: none; /* Remove underline on the Link */
+            .add-product-btn {
+              --color: #007bff; /* Primary blue color */
+              font-family: inherit;
+              display: inline-flex;
+              align-items: center;
+              justify-content: center;
+              width: 3em;
+              height: 3em;
+              line-height: 2.5em;
+              position: relative;
+              cursor: pointer;
+              border: 1px solid black; /* Blue border */
+              transition: color 0.5s, background 0.3s, border-color 0.3s; /* Added border color transition */
+              z-index: 1;
+              font-size: 14px;
+              border-radius: 100px; /* Rounded corners */
+              font-weight: bold;
+              color: var(--color); /* Blue text */
+              background: #fff; /* White background */
+              gap: 0.5em; /* Space between the icon and text */
+            }
+            
+            
+            
+            .add-product-btn:hover {
+              color: #fff; /* White text on hover */
+              background: #03b300; /* Blue background on hover */
+              border-color: var(--color); /* Change border to blue on hover */
+            }
+            
+            .add-product-btn:hover:before {
+              top: -30px;
+              left: -30px; /* Move the circle to top-left on hover */
+            }
+            
+            .add-product-btn:active {
+              background: #03b300; /* Dark blue background on active */
+              border-color: #051323; /* Dark blue border on active */
+              
+            }
+            
+            .add-product-btn:active:before {
+              background: #02a11c; /* Even darker blue circle on active */
+             
+            }
+            
+          }
+          
+        }
+      
+        ul {
+          list-style-type: none;
+          padding-left: 0;
+          display: flex;
+          a{
+            text-decoration: none;
+            li {
+              background-color: #20abec;
+              margin-bottom: 10px;
+              width: 100px;
+              padding: 10px;
+              margin: 15px;
+              border-radius: 5px;
+              font-size: 16px;
+              color: #ffffff;
+              transition: background-color 0.3s;
+        
+              &:hover {
+                background-color: #198abe;
+              }
+            }
+          }
+        }
+
+      }
+      
+  }
